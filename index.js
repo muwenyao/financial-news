@@ -7,11 +7,12 @@ data.map((item, index) => {
     let nav = document.createElement('nav')
     nav.setAttribute('index', index)
     let nava = document.createElement('h4')
-    nava.innerHTML = item.content.title
-    nav.appendChild(nava)
-
     let navp = document.createElement('p')
+   
+    nava.innerHTML = item.content.title
     navp.innerHTML = item.content.summary
+    
+    nav.appendChild(nava)
     nav.appendChild(navp)
 
     let aside = document.querySelector('aside')
@@ -20,14 +21,17 @@ data.map((item, index) => {
     let content = document.createElement('div')
     content.setAttribute('index', index)
     content.setAttribute('class', 'container')
+
     let eleh3 = document.createElement('h3')
-    eleh3.innerHTML = item.content.title
     let eleTime = document.createElement('time')
-    eleTime.innerHTML = item.content.modifyDate
     let elep = document.createElement('p')
-    elep.innerHTML = item.content.summary
     let elediv = document.createElement('div')
+   
+    eleh3.innerHTML = item.content.title
+    eleTime.innerHTML = item.content.modifyDate
+    elep.innerHTML = item.content.summary
     elediv.innerHTML = item.content.summarylink
+
     let eleul = document.createElement('ul')
     if (item.content.relate_stock.length) {
         item.content.relate_stock.map((elementOrValue, indexOrKey) => {
