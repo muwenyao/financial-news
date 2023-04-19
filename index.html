@@ -30,7 +30,8 @@
             padding: 20px;
         }
         aside{
-            width: 35vw;
+            position: fixed;
+            width: 320px;
             height: 100vh;
             overflow-y: auto;
             overflow-x: hidden;
@@ -49,11 +50,13 @@
             width: 300px;
         }
         main{
-            width: 100%;
+            /* width: 100%; */
             margin: 0 20px;
             height: 100vh;
             overflow: auto;
             font-size: 14px;
+            position: fixed;
+            left: 320px;
         }
         main>div>div>p>img{
             width: 700px;
@@ -67,12 +70,14 @@
     </style>
 </head>
 <body>
-    <aside>
+    <div class="app">
+        <aside>
        
-    </aside>
-    <main>
-      
-    </main>
+        </aside>
+        <main>
+        
+        </main>
+    </div>
 </body>
 <script src="./datas.js"></script>
 <script src="./index.js"></script>
