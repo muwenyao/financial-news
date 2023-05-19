@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="data:;base64,=">
+    <title></title>
+    <link href="../../css/chunk-0d99dc28.b4671491.css" rel="prefetch">
+    <link href="../../css/chunk-0fd03b7b.aed3fcdc.css" rel="prefetch">
+    <link href="../../css/chunk-642785cb.4d95c2a5.css" rel="prefetch">
+    <link href="../../js/chunk-0d99dc28.bad72439.js" rel="prefetch">
+    <link href="../../js/chunk-0fd03b7b.b7470f66.js" rel="prefetch">
+    <link href="../../js/chunk-642785cb.e6b19330.js" rel="prefetch">
+    <link href="../../css/chunk-common.cece760e.css" rel="preload" as="style">
+    <link href="../../css/htsecNewsIndex.0966bdff.css" rel="preload" as="style">
+    <link href="../../js/chunk-common.52eadb84.js" rel="preload" as="script">
+    <link href="../../js/chunk-vendors.37615247.js" rel="preload" as="script">
+    <link href="../../js/htsecNewsIndex.21e4e0fa.js" rel="preload" as="script">
+    <link href="../../css/chunk-common.cece760e.css" rel="stylesheet">
+    <link href="../../css/htsecNewsIndex.0966bdff.css" rel="stylesheet">
+</head>
+
+<body ontouchstart="" class="">
+    <script>function getDecodeRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = {};
+            url = decodeURIComponent(url);
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = (strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        };
+        function debugBtn() {
+            localStorage.setItem('active-eruda', true);
+            var src = '//cdn.bootcss.com/eruda/1.5.2/eruda.min.js';
+            if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+            document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+        };
+        if (getDecodeRequest().isDebug) {
+            debugBtn();
+        }
+        document.body.className += (getDecodeRequest().theme ? getDecodeRequest().theme : 'white');
+        document.body.setAttribute('syncCollectionStatus', '')
+        window.syncCollectionStatus = (status) => {
+            document.body.setAttribute('syncCollectionStatus', status);
+        }</script>
+    <div id="htsecNews"></div>
+    <script src="../../js/chunk-vendors.37615247.js"></script>
+    <script src="../../js/chunk-common.52eadb84.js"></script>
+    <script src="../../js/htsecNewsIndex.21e4e0fa.js"></script>
+</body>
+<script src="../../staticJs/jweixin-1.6.0.js"></script>
+
+</html>
