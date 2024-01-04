@@ -205,7 +205,7 @@
         e
     }
     ;
-    var s = window["webpackJsonp"] = window["webpackJsonp"] || []
+    var s = []
       , d = s.push.bind(s);
     s.push = t,
     s = s.slice();
@@ -309,6 +309,7 @@
         r["a"].prototype.$sumUpRose = b["d"],
         r["a"].prototype.$hasSafeAreaInset = l["h"],
         r["a"].prototype.$decrypt_ECB = g["a"],
+        console.log(g["a"],'000')
         new r["a"]({
             render: function(e) {
                 return e(d)

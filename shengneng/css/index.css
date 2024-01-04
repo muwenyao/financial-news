@@ -133,24 +133,23 @@ header>p{
     color: #4d4d4d;
 }
 .tab-tilte a{
+    display: block;
+    /* width: 100%;
+    height: 100; */
+    text-align: center;
     color: #4d4d4d;
 }
-.tab-tilte li:hover{
+.tab-tilte li a:hover{
     width: 26.25rem;
     height: 4.75rem;
     line-height: 4.6875rem;
     background: #019b4b;
     color: #fff;
-}
-.tab-tilte li a:hover{
     text-decoration: none;
-    color: #fff;
 }
-.tab-tilte li.active{
+
+.tab-tilte .active a{
     background: #019b4b;
-    color: #fff;
-}
-.tab-tilte li.active a{
     color: #fff;
 }
 .tab-content div{
@@ -303,7 +302,13 @@ main{
     height: .125rem;
     z-index: 1;
   }
-  
+  .box-contenter>div {
+    height: 20.5rem;
+    display: none;
+  }
+  .box-contenter>.active {
+    display: block;
+  }
   .news .news-content {
     margin-top: 1.875rem;
     display: flex;
@@ -364,6 +369,9 @@ footer>p{
     width: 105.3125rem;
     margin: .9375rem auto;
     font-size: 1.375rem;
+    
+}
+footer>p a{
     color: #666;
 }
 footer>p span:hover{
@@ -385,7 +393,7 @@ footer>p span:hover{
     margin: 1.25rem 0;
     color: #4d4d4d;
 }
-.footer_con>div p{
+.footer_con>div p a{
     line-height: 2.5rem;
     font-size: 1.375rem;
     color: #666;

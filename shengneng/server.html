@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>申能官网</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <p>欢迎光临申能财险官网!</p>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="search_box">
+                    <div class="search_top">
+                        <input type="text" placeholder="请输入关键字">
+                        <span></span>
+                    </div>
+                    <div class="search_key">
+                        <p>热门关键字：</p>
+                        <div> 车险 </div><span>|</span>
+                        <div> 申能财险</div><span>|</span>
+                        <div> 理赔流 </div><span>|</span>
+                        <div>保单验真 </div>
+                    </div>
+                </div>
+                <div class="hot_tel">
+                    <img src="./img/hot_tel.png" alt="">
+                </div>
+            </div>
+
+
+        </header>
+        <div class="nav_wrap">
+            <ul id="tab-tilte" class="tab-tilte">
+                <li>
+                    <a href="./index.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="./server.html">客户服务</a>
+                </li>
+                <li>
+                    <a href="./information.html">公开信息披露</a>
+                </li>
+                <li class="active">
+                    <a href="./about.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <div id="app">
+                <div>
+                    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
+                        <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+                        <el-breadcrumb-item>活动管理</el-breadcrumb-item>
+                        <el-breadcrumb-item>活动列表</el-breadcrumb-item>
+                        <el-breadcrumb-item>活动详情</el-breadcrumb-item>
+                    </el-breadcrumb> -->
+                    <div class="content-box">
+                        <el-row :gutter="20" class="tac">
+                            <el-col :span="6">
+                                <!-- <h5>默认颜色</h5> -->
+                                <div class="menu-box">
+                                    <el-menu default-active="2" class="el-menu-vertical-demo" @select="handelSelect" @open="handleOpen"
+                                    @close="handleClose">
+                                    <el-submenu index="1">
+                                        <template slot="title">
+                                            <i class="el-icon-location"></i>
+                                            <span>导航一</span>
+                                        </template>
+                                        <el-menu-item-group>
+                                            <template slot="title">分组一</template>
+                                            <el-menu-item index="1-1">选项1</el-menu-item>
+                                            <el-menu-item index="1-2">选项2</el-menu-item>
+                                        </el-menu-item-group>
+                                        <el-menu-item-group title="分组2">
+                                            <el-menu-item index="1-3">选项3</el-menu-item>
+                                        </el-menu-item-group>
+                                        <el-submenu index="1-4">
+                                            <template slot="title">选项4</template>
+                                            <el-menu-item index="1-4-1">选项1</el-menu-item>
+                                        </el-submenu>
+                                    </el-submenu>
+                                    <el-menu-item index="2">
+                                        <i class="el-icon-menu"></i>
+                                        <span slot="title">导航二</span>
+                                    </el-menu-item>
+                                    <el-menu-item index="3" disabled>
+                                        <i class="el-icon-document"></i>
+                                        <span slot="title">导航三</span>
+                                    </el-menu-item>
+                                    <el-menu-item index="4">
+                                        <i class="el-icon-setting"></i>
+                                        <span slot="title">导航四</span>
+                                    </el-menu-item>
+                                </el-menu>
+                                </div>
+                               
+                            </el-col>
+                            <el-col :span="18">
+                                <div class="news">
+                                    <div class="news-containers">
+                                        <ul id="news-tilte" class="news-tilte">
+                                            <li class="active">申能新闻</li>
+                                            <div class="news_more">
+                                            </div>
+                                        </ul>
+                                        <div class="news-content" id="news-content">
+                                            <ul class="new_right_context">
+                                                <li>
+                                                    <div class="new_title">
+                                                        甘肃分公司推出五项理赔应急举措迅速应对临夏积石山6.2级地震
+                                                    </div>
+                                                    <div class="new_date">2023-12-18</div>
+                                                </li>
+                                                <li>
+                                                    <div class="new_title">
+                                                        安徽亳州中支荣获“亳州市劳动保障诚信A级单位”荣誉称号
+                                                    </div>
+                                                    <div class="new_date">2023-11-30</div>
+                                                </li>
+                                                <li>
+                                                    <div class="new_title">
+                                                        陕西西安中支举办反洗钱专题培训
+                                                    </div>
+                                                    <div class="new_date">2023-11-20</div>
+                                                </li>
+                                                <li>
+                                                    <div class="new_title">
+                                                        快速理赔显诚信 真诚服务暖人心——湖南桃江支公司获赠锦旗
+                                                    </div>
+                                                    <div class="new_date">2023-10-01</div>
+                                                </li>
+                                                <li>
+                                                    <div class="new_title">
+                                                        黑龙江分公司积极应对暴雪灾害天气
+                                                    </div>
+                                                    <div class="new_date">2023-09-01</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   
+
+                            </el-col>
+                        </el-row>
+                        <el-row :gutter="20">
+                            <el-col :span="10">
+                                <div><br></div>
+                            </el-col>
+                            <el-col :span="14">
+                                <el-pagination
+                                    background
+                                    layout="prev, pager, next"
+                                    :total="1000">
+                                    </el-pagination>
+                            </el-col>
+                            
+                        </el-row>
+                    </div>
+                   
+                </div>
+               
+                <!-- <router-link to="/Home">
+                    <el-button type="primary">主要按钮</el-button>
+                </router-link> -->
+
+                <!-- <div  style="height: 20rem;">
+                    
+                </div> -->
+
+            </div>
+        </main>
+
+        <footer>
+            <p>友情链接: <span>国家金融监督管理总局</span> &nbsp;<span>中国保险行业协会</span>&nbsp;<span>保险消费者知识园地</span></p>
+            <hr>
+            <div class="footer_con">
+                <div>
+                    <h3>关于我们</h3>
+                    <div style="display: flex;">
+                        <span style="margin-right: 50px;">
+                            <p>公司介绍 </p>
+                            <p>信访投诉</p>
+                        </span>
+                        <span>
+                            <p>联系我们</p>
+                            <p>机构网点</p>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h3>企业社会责任</h3>
+                    <p>企业公示</p>
+                    <p>公开信息披露</p>
+                </div>
+                <div>
+                    <h3>帮助中心</h3>
+                    <p>法律安全</p>
+                    <p>使用说明</p>
+                </div>
+                <div class="footer_logo"><img src="../img/logo.png" alt=""></div>
+            </div>
+            <div class="footer_bg"></div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    const NotFound = { template: '<p>Page not found</p>' }
+    const Home = { template: '<p>home page</p>' }
+    const About = { template: '<p>about page</p>' }
+    const other = { template: '<p>about page</p>' }
+    const routes = {
+        '/': Home,
+        '/about': About,
+        '/shengneng/views/about.html': other
+    }
+    new Vue({
+        el: '#app',
+        data: function () {
+           
+            return { 
+                visible: false,
+                currentRoute: window.location.pathname
+            }
+        },
+        computed: {
+            ViewComponent () {
+            // return routes[this.currentRoute]|| NotFound
+            }
+        },
+        mounted: function () {
+            this.$nextTick(function () {
+                // 仅在整个视图都被渲染之后才会运行的代码
+            })
+            console.log(this.currentRoute)
+            console.log(routes[this.currentRoute])
+        },
+        methods: {
+            handleOpen(key, keyPath) {
+                console.log(key, keyPath);
+            },
+            handleClose(key, keyPath) {
+                console.log(key, keyPath);
+            },
+            handelSelect(key, keyPath){
+                console.log(key, keyPath);
+            }
+        },
+        // render (h) { return h(this.ViewComponent) }
+    })
+</script>
+<script>
+    // $('#tab-tilte li').click(function () {
+    //     $(this).css({ 'background': 'green', 'color': '#fff' })
+    //     // $(this).children().css({ 'color': '#fff' })
+    //     // $(this).siblings().children().css({ 'color': '#4d4d4d' })
+    // }, function () {
+    //     // $(this).css('background','block')
+    // })
+
+
+
+
+</script>
+
+</html>
